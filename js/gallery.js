@@ -107,11 +107,17 @@ function tapOnGallery(event) {
         <img class="modalOpen" src=${tapOnItem} alt=${event.target.alt}>
         <a>Close</a>
     </div>
-`, {
-    onShow: (instance) => {
-        instance.element().querySelector('img').onclick = instance.close
+`,
+     {
+       onShow: (instance) => {
+         
+         instance.element().querySelector('img').onclick = instance.close;
+         
     }
-})
-
-instance.show()
+    }
+  )
+  instance.show();
+  const delStyle = document.querySelector(".basicLightbox__placeholder")
+  delStyle.style.removeProperty("max-width")
+  
  };
