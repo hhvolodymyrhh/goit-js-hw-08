@@ -54,19 +54,21 @@ img {
 }
 
 .basicLightbox--visible{
-  padding: 24px 164px !important;
+
 }
 
 .basicLightbox__placeholder{
-  
+ 
 }
 
 .modal{
-  width: 1112px;
-  height: 640px;
-
+padding: 28px 164px;
+width: 100%;
+height: 100%;
 }
+
 .modalOpen{
 object-fit: cover;
-
+width: 1112px;
+height: 640px;
 }
